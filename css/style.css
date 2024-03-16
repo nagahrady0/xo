@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.players {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  background: black;
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.players div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+.players div span {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.players div:nth-of-type(1) span {
+  color: orange;
+}
+.players div:nth-of-type(2) span {
+  color: red;
+}
+
+.container {
+  width: 450px;
+  height: 450px;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+.container div {
+  width: 140px;
+  height: 140px;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  border: 3px solid gold;
+}
+
+.one {
+  border-top-left-radius: 10px;
+}
+
+.three {
+  border-top-right-radius: 10px;
+}
+
+.seven {
+  border-bottom-left-radius: 10px;
+}
+
+.nine {
+  border-bottom-right-radius: 10px;
+}
+
+.playerOne {
+  color: orange;
+}
+.playerTwo {
+  color: red;
+}
